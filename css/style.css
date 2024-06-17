@@ -1,0 +1,59 @@
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3498db;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+    ul{
+display: flex;
+}
+li{
+    padding: 10px;
+    list-style: none;
+}
+a{
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-decoration: none;
+color: whitesmoke;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+nav a{
+    color:ghostwhite;
+    text-decoration: none;  
+    padding: 0px 5px 0px 0;
+    font-size: 15pt;
+    position: relative;
+
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.banner-top{
+    background: url(../img/Dell-anuncia-nova-geracao-de-computadores-nos-formatos-desktop-e-All-in-One.webp);
+    height: 90vh;
+    text-align: center;
+    background-repeat:no-repeat;
+    background-size: 980px;
+}
+.bloco{
+    display: flex;
+    font-size: large;
+}
